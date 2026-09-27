@@ -1,0 +1,13 @@
+{
+	"suite_name": "login_regression",
+	"results": [
+			"PASS",
+			"FAIL",
+			"PASS",
+			"BLOCKED",
+			"FAIL",
+			"PASS",
+			"SKIPPED"
+					]
+
+}
