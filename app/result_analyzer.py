@@ -11,7 +11,7 @@ def validate_results(results):
 		if not isinstance(result, str):
 			raise TypeError("result needs to be a string")
 		if result not in ALLOWED_STATUSES:
-			raise ValueError("Invalid status, must be PASS, FAIL, BLOCKED, or SKIPPED")	
+			raise ValueError("Invalid status")	
 
 def count_statuses(results):
 	counts = {}
