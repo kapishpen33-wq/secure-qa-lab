@@ -11,7 +11,7 @@ def validate_results(results):
 		if not isinstance(result, str):
 			raise TypeError("result needs to be a string")
 		if result not in ALLOWED_STATUSES:
-			raise ValueError("Invalid status, must be PASS, FAIL, BLOCKED, or SKIPPED")	
+			raise ValueError("Invalid status")	
 
 def count_statuses(results):
 	counts = {}
@@ -33,8 +33,6 @@ def calculate_pass_rate(results):
 	for status in results:
 		if status == "PASS":
 			num_of_pass += 1
-		else:
-			total_statuses +=1
 	pass_rate = (num_of_pass) /(total_statuses) * 100
 	return round(pass_rate, 2)
 
